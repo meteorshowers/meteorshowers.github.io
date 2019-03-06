@@ -6,31 +6,28 @@ email: jason.li.nku@gmail.com
 github: sj-li
 gavatar: /assets/img/avatar.JPG
 workHistory:
-# - work5:
-#   company: Visual Computing Group, Technische Universität München
-#   location: Munich, German
-#   title: Research Intern
-#   started: 2018
-#   duration: (2018.10 - 2018.12)
-#   description: 在
+- work5:
+  company: Visual Computing Group, Technische Universität München
+  location: Munich, German
+  title: Research Intern
+  started: 2018
+  duration: (2018.10 - 2018.12)
 
-# - work4:
-#   company: Alibaba AI Lab
-#   location: Beijing, China
-#   title: Robotics Perception Intern
-#   started: 2018
-#   duration: (2018.5 - 2018.8)
-#   description: 在
+- work4:
+  company: Alibaba AI Lab
+  location: Beijing, China
+  title: Robotics Perception Intern
+  started: 2018
+  duration: (2018.5 - 2018.8)
   
-# - work3:
-#   company: UISEE
-#   location: Beijing, China
-#   title: Robotics Perception Intern
-#   started: 2017
-#   duration: (2017.6 - 2018.2)
-#   description: 在
+- work3:
+  company: UISEE
+  location: Beijing, China
+  title: Robotics Perception Intern
+  started: 2017
+  duration: (2017.6 - 2018.2)
   
-  - work2:
+- work2:
   company: Media Computing Lab, College of Computer Science, Nankai University
   location: Tianjin, China
   title: Research Assistant
