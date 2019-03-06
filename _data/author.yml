@@ -10,35 +10,30 @@ workHistory:
   company: Visual Computing Group, Technische Universität München
   location: Munich, German
   title: Research Intern
-  started: 2018
   duration: (2018.10 - 2018.12)
 
 - work4:
   company: Alibaba AI Lab
   location: Beijing, China
   title: Robotics Perception Intern
-  started: 2018
   duration: (2018.5 - 2018.8)
   
 - work3:
   company: UISEE
   location: Beijing, China
   title: Robotics Perception Intern
-  started: 2017
   duration: (2017.6 - 2018.2)
   
 - work2:
   company: Media Computing Lab, College of Computer Science, Nankai University
   location: Tianjin, China
   title: Research Assistant
-  started: 2015
   duration: (2015.11 - 2019.6)
   
 - work1:
   company: Machine Intelligence Institute, University of Electronic Science and Technology of China
   location: ChengDu, China
   title: Research Intern
-  started: 2014
   duration: (2014.6 - 2014.10)
   
 educationHistory:
@@ -46,18 +41,15 @@ educationHistory:
   organization: University of Bonn
   degree: PhD
   major: Computer Science
-  started: 2019
   duration: (2019.9 - 2023.7)
 - education2:
   organization: Nankai University
   degree: Master
   major: Computer Science
-  started: 2016
   duration: (2016.9 - 2019.7)
 - education3:
   organization: University of Electronic Science and Technology of China
   degree: Bachelor
   major: Automation Engineer
-  started: 2012
   duration: (2012.9 - 2016.7)
 
