@@ -1,7 +1,7 @@
 # Site settings
 title: Shijie Li
 description: PhD Student, University of Bonn, Computer Vision Group
-favicon: /assets/img/avatar.JPG
+favicon: /assets/img/me.jpg
 baseurl:
 url: https://sj-li.github.io
 rss_url:
