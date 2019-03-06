@@ -40,35 +40,15 @@ workHistory:
 
 educationHistory:
 - education1:
-  organization: 安徽大学
-  degree: 学士
-  major: 化学工程与工艺
-  started: 2010
-  duration: (2010.9 - 2014.7)
-  description: 自学 C/C++, Java, Linux, 培训并参加过 ACM 比赛
-languages:
-- language1:
-  name: 中文
-  proficiency: Native
-- language2:
-  name: English
-  proficiency: Limit
-programmingSkills:
-- Java:
-  name: Java/Android
-  percentage: 90%
-- Bash:
-  name: Bash Shell
-  percentage: 90%
-- CPP:
-  name: C/C++
-  percentage: 80%
-- PHP:
-  name: PHP
-  percentage: 30%
-- Python:
-  name: Python
-  percentage: 30%
-- Kotlin:
-  name: Kotlin
-  percentage: 70%
+  organization: Nankai University
+  degree: Master
+  major: Computer Science
+  started: 2016
+  duration: (2016.9 - 2019.7)
+- education2:
+  organization: University of Electronic Science and Technology of China
+  degree: Bachelor
+  major: Automation Engineer
+  started: 2012
+  duration: (2012.9 - 2016.7)
+
