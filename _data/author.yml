@@ -12,6 +12,7 @@ workHistory:
   title: Research Intern
   started: 2018
   duration: (2018.10 - 2018.12)
+  description: 在
 
 - work4:
   company: Alibaba AI Lab
@@ -19,6 +20,7 @@ workHistory:
   title: Robotics Perception Intern
   started: 2018
   duration: (2018.5 - 2018.8)
+  description: 在
   
 - work3:
   company: UISEE
@@ -26,13 +28,15 @@ workHistory:
   title: Robotics Perception Intern
   started: 2017
   duration: (2017.6 - 2018.2)
+  description: 在
   
   - work2:
   company: Media Computing Lab, College of Computer Science, Nankai University
   location: Tianjin, China
-  title: Research Intern
+  title: Research Assistant
   started: 2015
   duration: (2015.11 - 2019.6)
+  description: 在
   
 - work1:
   company: Machine Intelligence Institute, University of Electronic Science and Technology of China
@@ -40,6 +44,7 @@ workHistory:
   title: Research Intern
   started: 2014
   duration: (2014.6 - 2014.10)
+  description: 在
   
 educationHistory:
 - education1:
