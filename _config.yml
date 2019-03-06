@@ -1,9 +1,9 @@
 # Site settings
-title: Liang Ke Jin
-description: Liang Ke Jin
+title: Shijie Li
+description: PhD Student, University of Bonn, Computer Vision Group of Prof. Juergen Gall
 favicon: /assets/img/avatar.JPG
 baseurl:
-url: https://liungkejin.github.io
+url: https://sj-li.github.io
 rss_url:
 
 # Build settings
