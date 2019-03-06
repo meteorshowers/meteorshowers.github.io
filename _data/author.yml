@@ -1,7 +1,6 @@
 # Author settings
 name: Shijie Li
-title: PhD Student, University of Bonn   
-Computer Vision Group of Prof. Juergen Gall
+title: PhD Student, University of Bonn
 address: Tianjin, China
 email: jason.li.nku@gmail.com
 github: sj-li
@@ -44,7 +43,7 @@ workHistory:
   
 educationHistory:
 - education1:
-  organization: Rheinische Friedrich-Wilhelms-Universität Bonn
+  organization: University of Bonn
   degree: PhD
   major: Computer Science
   started: 2019
