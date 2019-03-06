@@ -30,13 +30,12 @@ workHistory:
 #   duration: (2017.6 - 2018.2)
 #   description: 在
   
-#   - work2:
-#   company: Media Computing Lab, College of Computer Science, Nankai University
-#   location: Tianjin, China
-#   title: Research Assistant
-#   started: 2015
-#   duration: (2015.11 - 2019.6)
-#   description: 在
+  - work2:
+  company: Media Computing Lab, College of Computer Science, Nankai University
+  location: Tianjin, China
+  title: Research Assistant
+  started: 2015
+  duration: (2015.11 - 2019.6)
   
 - work1:
   company: Machine Intelligence Institute, University of Electronic Science and Technology of China
