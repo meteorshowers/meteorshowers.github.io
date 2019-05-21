@@ -1,9 +1,9 @@
 # Site settings
-title: Shijie Li
-description: PhD Student, University of Bonn, Computer Vision Group
-favicon: /assets/img/me.jpg
+title: XuanYi Li
+description: Master Student, Media Computing Lab, CCCE & CS, Nankai University
+favicon: /assets/img/myphoto.jpg
 baseurl:
-url: https://sj-li.github.io
+url: https://meteorshowers.github.io/
 rss_url:
 
 # Build settings
