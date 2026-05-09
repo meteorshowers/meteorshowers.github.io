@@ -2421,3 +2421,51 @@ nav ul li a:focus {
         min-height: 340px;
     }
 }
+
+/* Cross-browser layout hardening */
+.figure-hero > *,
+.figure-section > *,
+.figure-video-section > *,
+.section-media-copy,
+.media-slider {
+    min-width: 0;
+}
+
+.hero-video-card,
+.video-card,
+.local-video-card {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+}
+
+.hero-video-card:before,
+.video-card:before,
+.local-video-card:before {
+    display: none;
+}
+
+.hero-video-card video,
+.video-card video,
+.local-video-card video {
+    display: block;
+}
+
+.media-slider {
+    width: 100%;
+    max-width: 100%;
+}
+
+.media-slider .side-image-card {
+    flex: 0 0 min(92%, 720px);
+}
+
+.side-image-card img {
+    max-height: 360px;
+    object-fit: contain;
+    background: #f7f8f6;
+}
+
+.figure-section {
+    overflow: hidden;
+}
