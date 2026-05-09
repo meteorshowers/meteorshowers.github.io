@@ -1,5 +1,7 @@
 _site
 .sass-cache
+.bundle
+vendor
 .idea
 resumecard.iml
 /*.iml

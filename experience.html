@@ -4,59 +4,104 @@ layout: blog_layout
 
 ---
 
-<html>
-    <h1> Education </h1>
-    
-    <ul>
-        <!-- <li>
-            <b>University of Bonn</b>, PhD Student <br />
-            <sub>Bonn, German | 2019.09-2023.06 </sub> 
-            
-        </li>  -->
-        
-        <li>
-            <b>Nankai University</b>, Master Student <br /> 
-            <sub>Tianjin, China | 2018.06-2021.06 </sub>
-            
-        </li>
-        
-        <li>
-            <b>Xidian University</b>，Bachelor Student <br /> 
-            <sub>Xi'an, China | 2014.09-2018.06</sub> <br />
-            
-        </li>  
-             
-     </ul>
-</html>  
+<section class="page-title">
+  <p class="eyebrow">Experience</p>
+  <h1>Short case studies from production AI systems.</h1>
+  <p>
+    Each experience is framed by the system problem, the model stack, and the industrial result. Media panels are ready to be replaced by real demos, screenshots, or launch videos.
+  </p>
+</section>
 
-<!-- 
-<html>
-    <h1> Work </h1>
-    <ul>
-        <li>
-            <b>Visual Computing Group(Technical University of Munich)</b>, Research Intern <br /> 
-            <sub>Munich, German | 2018.10-2018.12</sub>
-        </li>
-        
-        <li>
-            <b>Alibaba AI Lab</b>, Robotics Perception Intern <br /> 
-            <sub>Beijing, China | 2018.05-2018.08</sub>
-        </li>
-        
-        <li>
-            <b>UISEE</b>,  Autonomous Driving Perception Intern <br /> 
-            <sub>Beijing, China | 2017.06-2018.02</sub>
-        </li>
-        
-         <li>
-            <b>Media Computing Lab, Nankai University</b>, Research Assistant <br /> 
-            <sub>Tianjin, China | 2015.10-2019.06</sub>
-        </li>  
-        
-        <li>
-            <b>Machine Intelligence Institute</b>, Research Intern <br />
-            <sub>ChengDu, China | 2014.05-2014.10</sub>
-        </li>  
-             
-     </ul>
-</html>   -->
+<section class="case-feature" id="xpeng">
+  <div class="case-copy">
+    <p class="eyebrow">2024 - Present · Beijing</p>
+    <h2>XPeng Motors · AI Model Team (VLA / XPlanner)</h2>
+    <p>Technical lead for vehicle-side VLA/XPlanner model architecture, pure-vision data systems, large-model scaling, and production iteration.</p>
+    <ul class="case-points">
+      <li>Built route-video-to-trajectory model flow for dynamic interaction scenes.</li>
+      <li>Scaled PLA models from 0.3B to 2B and deployed to A100-based workflows.</li>
+      <li>Improved planning in U-turns, intersections, route following, and long-tail scenarios.</li>
+    </ul>
+  </div>
+  <figure class="case-media visual-xpeng" aria-label="Animated VLA planning media">
+    <div class="media-label">VLA / XPlanner</div>
+    <div class="road-grid"></div>
+    <div class="trajectory-line"></div>
+    <div class="car-node primary"></div>
+    <div class="car-node secondary"></div>
+  </figure>
+</section>
+
+<section class="case-feature reverse" id="dji-auto">
+  <div class="case-copy">
+    <p class="eyebrow">2021 - 2024 · Shenzhen</p>
+    <h2>DJI Automotive · BEV Perception</h2>
+    <p>Perception algorithm lead for production BEV systems, dynamic sensing, multi-task delivery, and real vehicle platform constraints.</p>
+    <ul class="case-points">
+      <li>Owned BEV lane, BEVDet, dynamic object detection, and tracking fusion.</li>
+      <li>Supported 4D annotation and pure-vision BEV data production loops.</li>
+      <li>Delivered across ORIN, Xavier, VH, and SA8650 compute platforms.</li>
+    </ul>
+  </div>
+  <figure class="case-media visual-bev" aria-label="Animated BEV perception media">
+    <div class="media-label">BEV / Occupancy</div>
+    <div class="bev-radar"></div>
+    <div class="bev-box b1"></div>
+    <div class="bev-box b2"></div>
+    <div class="bev-box b3"></div>
+  </figure>
+</section>
+
+<section class="case-feature" id="bytedance">
+  <div class="case-copy">
+    <p class="eyebrow">2021 · Beijing</p>
+    <h2>ByteDance Search · Multimodal AIGC</h2>
+    <p>Explored GPT-based multimodal video title generation and recommendation-oriented data construction for short-video search scenarios.</p>
+    <ul class="case-points">
+      <li>Built generated-task datasets for video title learning.</li>
+      <li>Connected visual content, text description, and recommendation signals.</li>
+      <li>Focused on practical AIGC use inside a high-traffic product setting.</li>
+    </ul>
+  </div>
+  <figure class="case-media visual-aigc" aria-label="Animated multimodal AIGC media">
+    <div class="media-label">Video + Text</div>
+    <div class="caption-card c1">scene understanding</div>
+    <div class="caption-card c2">title generation</div>
+    <div class="caption-card c3">ranking signal</div>
+  </figure>
+</section>
+
+<section class="case-feature reverse" id="stereo">
+  <div class="case-copy">
+    <p class="eyebrow">2019 - 2020 · Shenzhen / Open Source</p>
+    <h2>DJI Stereo Research + X-StereoLab</h2>
+    <p>Worked on real-time stereo matching for autonomous driving and maintained a practical open-source stereo stack used by the community.</p>
+    <ul class="case-points">
+      <li>Built real-time binocular matching baselines and production benchmarks.</li>
+      <li>Compared supervised and unsupervised training strategies under deployment constraints.</li>
+      <li>X-StereoLab reached 600+ stars and 100+ forks.</li>
+    </ul>
+  </div>
+  <figure class="case-media visual-stereo" aria-label="Animated stereo matching media">
+    <div class="media-label">Stereo Depth</div>
+    <div class="camera-frame left"></div>
+    <div class="camera-frame right"></div>
+    <div class="depth-wave"></div>
+  </figure>
+</section>
+
+<section class="section-block">
+  <h2>Education</h2>
+  <div class="education-grid">
+    <article>
+      <span class="date">2018.06 - 2021.06</span>
+      <h3>Nankai University</h3>
+      <p>Master, Computer Science and Technology. Advisor: Ming-Ming Cheng. Research: deep learning and applications.</p>
+    </article>
+    <article>
+      <span class="date">2014.09 - 2018.06</span>
+      <h3>Xidian University</h3>
+      <p>Bachelor, Electronic Information Engineering. First-class scholarship and excellent class leader honors.</p>
+    </article>
+  </div>
+</section>
