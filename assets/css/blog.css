@@ -2481,18 +2481,22 @@ nav ul li a:focus {
 
 .visitor-stats {
     display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+    width: fit-content;
     margin-top: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(20, 30, 34, .1);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 12px 32px rgba(32, 44, 48, .07);
 }
 
 .visitor-stats div {
     min-width: 128px;
-    padding: 14px 16px;
-    border: 1px solid rgba(20, 30, 34, .1);
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 10px 28px rgba(32, 44, 48, .06);
+    padding: 16px 18px;
+}
+
+.visitor-stats div + div {
+    border-left: 1px solid rgba(20, 30, 34, .1);
 }
 
 .visitor-stats span {
