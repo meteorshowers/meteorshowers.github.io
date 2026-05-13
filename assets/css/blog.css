@@ -2488,8 +2488,8 @@ nav ul li a:focus {
 .visitor-counter-widget {
     display: grid;
     place-items: center;
-    min-width: min(100%, 390px);
-    min-height: 210px;
+    width: min(100%, 392px);
+    min-height: 212px;
     padding: 16px;
     border: 1px solid rgba(20, 30, 34, .1);
     border-radius: 8px;
@@ -2497,7 +2497,7 @@ nav ul li a:focus {
     box-shadow: 0 14px 36px rgba(32, 44, 48, .08);
 }
 
-.visitor-counter-widget #scvmap {
+.visitor-counter-widget > span {
     max-width: 100%;
 }
 
