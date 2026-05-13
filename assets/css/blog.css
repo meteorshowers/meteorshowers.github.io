@@ -2479,6 +2479,40 @@ nav ul li a:focus {
     line-height: 1.1;
 }
 
+.visitor-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.visitor-stats div {
+    min-width: 128px;
+    padding: 14px 16px;
+    border: 1px solid rgba(20, 30, 34, .1);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 28px rgba(32, 44, 48, .06);
+}
+
+.visitor-stats span {
+    display: block;
+    color: #111820;
+    font-size: 28px;
+    font-weight: 850;
+    line-height: 1;
+}
+
+.visitor-stats small {
+    display: block;
+    margin-top: 8px;
+    color: #6a747a;
+    font-size: 12px;
+    font-weight: 750;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
 .visitor-widget {
     display: flex;
     justify-content: flex-end;
