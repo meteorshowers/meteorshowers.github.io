@@ -129,7 +129,33 @@ layout: blog_layout
     <p class="figure-kicker">Visitors</p>
     <h2>Global visits</h2>
   </div>
-  <div class="visitor-widget">
-    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5wxh232i66n&amp;s=220&amp;m=0&amp;v=false&amp;r=false&amp;b=ffffff&amp;n=false&amp;c=182025" async="async"></script>
+  <div class="visitor-widget" aria-label="Global visitor map">
+    <div class="visitor-map-card">
+      <svg viewBox="0 0 520 300" role="img" aria-label="World map visitor distribution">
+        <rect class="visitor-ocean" width="520" height="300" rx="18" />
+        <g class="visitor-grid">
+          <path d="M87 28 V272 M173 28 V272 M260 28 V272 M347 28 V272 M433 28 V272" />
+          <path d="M24 75 H496 M24 150 H496 M24 225 H496" />
+        </g>
+        <g class="visitor-land">
+          <path d="M55 72 C78 45 127 47 157 70 C184 91 184 124 154 136 C130 146 117 161 91 153 C56 142 33 119 36 94 C37 84 44 77 55 72 Z" />
+          <path d="M132 160 C160 147 190 164 202 194 C216 231 195 270 163 263 C137 257 113 224 118 192 C120 177 123 166 132 160 Z" />
+          <path d="M225 78 C248 52 300 50 339 69 C367 82 382 112 361 131 C343 147 313 134 293 140 C264 147 232 133 219 111 C212 99 215 87 225 78 Z" />
+          <path d="M260 146 C288 135 320 150 333 183 C347 217 330 248 299 249 C275 249 258 224 253 195 C251 175 253 157 260 146 Z" />
+          <path d="M337 70 C368 45 430 47 471 73 C502 93 500 128 466 141 C435 153 416 132 391 139 C363 147 331 128 321 103 C316 90 325 78 337 70 Z" />
+          <path d="M379 143 C396 136 422 143 429 162 C436 181 415 194 396 185 C378 177 366 152 379 143 Z" />
+          <path d="M406 198 C437 176 481 187 494 218 C508 248 473 270 436 258 C407 249 386 220 406 198 Z" />
+        </g>
+        <g class="visitor-pins">
+          <circle cx="92" cy="101" r="6" />
+          <circle cx="156" cy="208" r="5" />
+          <circle cx="281" cy="119" r="5" />
+          <circle cx="318" cy="188" r="4" />
+          <circle cx="405" cy="123" r="6" />
+          <circle cx="448" cy="226" r="4" />
+        </g>
+      </svg>
+      <p>Live visitor map widget pending a new tracking provider.</p>
+    </div>
   </div>
 </section>

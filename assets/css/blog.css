@@ -2485,6 +2485,56 @@ nav ul li a:focus {
     min-height: 230px;
 }
 
+.visitor-map-card {
+    width: min(100%, 360px);
+    padding: 14px;
+    border: 1px solid rgba(20, 30, 34, .1);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 14px 36px rgba(32, 44, 48, .08);
+}
+
+.visitor-map-card svg {
+    display: block;
+    width: 100%;
+    aspect-ratio: 26 / 15;
+}
+
+.visitor-ocean {
+    fill: #edf5f4;
+}
+
+.visitor-grid path {
+    fill: none;
+    stroke: rgba(18, 99, 111, .12);
+    stroke-width: 1;
+    stroke-dasharray: 5 8;
+}
+
+.visitor-land path {
+    fill: #d5e0da;
+    stroke: rgba(18, 99, 111, .18);
+    stroke-width: 2;
+}
+
+.visitor-pins circle {
+    fill: #182025;
+    stroke: #fff;
+    stroke-width: 2;
+    filter: drop-shadow(0 8px 12px rgba(20, 30, 34, .18));
+}
+
+.visitor-pins circle:nth-child(2n) {
+    fill: #3f8fb8;
+}
+
+.visitor-map-card p {
+    margin: 10px 0 0;
+    color: #6a747a;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
 @media (max-width: 700px) {
     .visitor-globe {
         grid-template-columns: 1fr;
