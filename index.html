@@ -35,10 +35,27 @@ layout: blog_layout
       XLab embodied intelligence media reference.
     </p>
   </div>
-  <div class="video-card">
-    <video controls autoplay muted loop playsinline preload="metadata">
-      <source src="/assets/videos/xlab-embodied-intelligence.mp4" type="video/mp4">
-    </video>
+  <div class="media-carousel xlab-carousel" aria-label="XLab embodied intelligence media gallery">
+    <input class="media-carousel-radio" type="radio" name="xlab-media" id="xlab-media-video" checked>
+    <input class="media-carousel-radio" type="radio" name="xlab-media" id="xlab-media-system">
+    <div class="media-carousel-track">
+      <div class="media-carousel-slide">
+        <div class="video-card">
+          <video controls autoplay muted loop playsinline preload="metadata">
+            <source src="/assets/videos/xlab-embodied-intelligence.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="media-carousel-slide">
+        <div class="system-flow-card">
+          <iframe src="/assets/embeds/helix_style_flow_recreation.html" title="Embodied VLA system architecture animation" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="media-carousel-tabs" aria-label="Select XLab media">
+      <label for="xlab-media-video">Demo video</label>
+      <label for="xlab-media-system">System view</label>
+    </div>
   </div>
 </section>
 

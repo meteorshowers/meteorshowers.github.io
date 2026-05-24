@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HELIX Style Flow Recreation</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #09090a;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    svg {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      background: #09090a;
+    }
+
+    .label {
+      fill: rgba(255,255,255,.42);
+      font-size: 22px;
+    }
+
+    .small {
+      fill: rgba(255,255,255,.54);
+      font-size: 22px;
+    }
+
+    .white {
+      fill: rgba(255,255,255,.92);
+    }
+
+    .wire {
+      fill: none;
+      stroke: rgba(255,255,255,.62);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .wire-dim {
+      fill: none;
+      stroke: rgba(255,255,255,.36);
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .dot {
+      fill: rgba(255,255,255,.96);
+      filter: url(#glow);
+    }
+
+    .card-text {
+      fill: rgba(255,255,255,.93);
+      font-weight: 400;
+    }
+
+    .muted-card {
+      fill: rgba(255,255,255,.88);
+      font-weight: 300;
+    }
+
+    .camera-bg {
+      animation: pan 3.2s ease-in-out infinite alternate;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    @keyframes pan {
+      from { transform: scale(1.03) translateX(-8px); }
+      to { transform: scale(1.10) translateX(10px); }
+    }
+
+    .noise {
+      opacity: .22;
+      animation: shimmer 2.8s ease-in-out infinite alternate;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    @keyframes shimmer {
+      from { transform: translateY(10px); opacity: .12; }
+      to { transform: translateY(-8px); opacity: .28; }
+    }
+  </style>
+</head>
+<body>
+<svg viewBox="0 0 2736 1012" preserveAspectRatio="xMidYMid meet" role="img" aria-label="HELIX style animated architecture diagram">
+  <defs>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="videoGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#666"></stop>
+      <stop offset=".45" stop-color="#171717"></stop>
+      <stop offset="1" stop-color="#3d3d3d"></stop>
+    </linearGradient>
+
+    <pattern id="scan" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="3" fill="rgba(255,255,255,.04)"></rect>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="2736" height="1012" fill="#09090a"></rect>
+  <circle cx="1510" cy="505" r="520" fill="rgba(86,80,210,.045)"></circle>
+
+  <!-- Wires -->
+  <path class="wire" d="M386 212 H1546 V477"></path>
+  <path class="wire" d="M386 245 H787 V477"></path>
+  <path class="wire" d="M468 584 H570"></path>
+  <path class="wire" d="M1015 583 H1136"></path>
+  <path class="wire-dim" d="M397 925 H787 V824"></path>
+  <path class="wire-dim" d="M397 960 H1544 V825"></path>
+
+  <circle class="dot" r="4.5">
+    <animateMotion dur="2.8s" repeatCount="indefinite" path="M386 212 H1546 V477"></animateMotion>
+  </circle>
+  <circle class="dot" r="4.5">
+    <animateMotion dur="2.1s" repeatCount="indefinite" path="M386 245 H787 V477"></animateMotion>
+  </circle>
+  <circle class="dot" r="4.5">
+    <animateMotion dur="1.1s" repeatCount="indefinite" path="M468 584 H570"></animateMotion>
+  </circle>
+  <circle class="dot" r="4.5">
+    <animateMotion dur="1.55s" repeatCount="indefinite" path="M1015 583 H1136"></animateMotion>
+  </circle>
+  <circle class="dot" r="4.5">
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M397 925 H787 V824"></animateMotion>
+  </circle>
+  <circle class="dot" r="4.5">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M397 960 H1544 V825"></animateMotion>
+  </circle>
+
+  <!-- Left video -->
+  <text class="label" x="148" y="106">ROBOT IMAGES</text>
+  <clipPath id="leftVidClip"><rect x="75" y="124" width="312" height="228" rx="16"></rect></clipPath>
+  <rect x="75" y="124" width="312" height="228" rx="16" fill="#202020" stroke="rgba(255,255,255,.18)" stroke-width="2"></rect>
+  <g clip-path="url(#leftVidClip)">
+    <rect class="camera-bg" x="55" y="110" width="360" height="260" fill="url(#videoGrad)"></rect>
+    <rect x="75" y="124" width="312" height="228" fill="url(#scan)" opacity=".55"></rect>
+    <path d="M104 286 L210 250 L298 282 L366 218" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="14"></path>
+    <circle cx="246" cy="265" r="24" fill="rgba(255,255,255,.35)"></circle>
+  </g>
+
+  <!-- Left labels -->
+  <text class="label" x="138" y="512" fill="rgba(136,132,255,.92)">TEXT COMMAND</text>
+  <text class="white" x="26" y="565" font-size="32" font-weight="500">
+    <tspan x="26" dy="0">“Pick up the butter and</tspan>
+    <tspan x="28" dy="42">hand it over to the robot</tspan>
+    <tspan x="118" dy="42">on your left.”</tspan>
+  </text>
+
+  <text class="label" x="158" y="867">ROBOT STATE</text>
+  <rect x="77" y="884" width="320" height="118" rx="16" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.22)" stroke-width="2"></rect>
+  <text class="white" x="100" y="934" font-size="32">
+    <tspan x="100" dy="0">Joint angles</tspan>
+    <tspan x="100" dy="40">Finger positions</tspan>
+  </text>
+
+  <!-- Frequency labels -->
+  <text class="small" x="402" y="200">20 Hz</text>
+  <text class="small" x="402" y="273">7-9 Hz</text>
+  <text class="small" x="1045" y="576">7-9Hz</text>
+  <text class="small" x="2052" y="576">200 Hz</text>
+  <text class="small" x="417" y="918">7-9Hz</text>
+  <text class="small" x="418" y="994">20 Hz</text>
+
+  <!-- Main HELIX box -->
+  <rect x="540" y="314" width="1470" height="548" rx="20" fill="rgba(95,93,203,.52)" stroke="rgba(133,130,255,.92)" stroke-width="2"></rect>
+  <text class="white" x="1824" y="385" font-size="42" letter-spacing="12" font-weight="300">HELIX</text>
+
+  <!-- Helix logo approximation -->
+  <g transform="translate(578 344)" fill="white" opacity=".92">
+    <circle cx="18" cy="8" r="3"></circle><circle cx="13" cy="18" r="3"></circle>
+    <circle cx="22" cy="23" r="3"></circle><circle cx="10" cy="32" r="3"></circle>
+    <circle cx="26" cy="38" r="3"></circle><circle cx="12" cy="48" r="3"></circle>
+    <circle cx="28" cy="55" r="3"></circle><circle cx="16" cy="66" r="3"></circle>
+    <path d="M19 8 C-4 24 47 34 17 50 C-4 62 37 70 23 82" fill="none" stroke="white" stroke-width="3" opacity=".82"></path>
+  </g>
+
+  <!-- System 2 card -->
+  <rect x="572" y="477" width="444" height="348" rx="20" fill="rgba(113,112,255,.92)" stroke="rgba(190,188,255,.66)" stroke-width="2"></rect>
+  <path class="noise" d="M596 770 C680 650 760 790 850 704 C920 642 970 730 993 675 L993 825 L596 825 Z" fill="rgba(255,255,255,.22)"></path>
+  <path class="noise" d="M600 610 V810 M620 650 V815 M643 600 V820 M667 640 V818 M700 626 V810 M730 592 V818 M770 610 V825 M810 648 V819 M850 616 V816 M890 638 V820 M930 612 V818 M970 644 V816" stroke="rgba(255,255,255,.24)" stroke-width="2"></path>
+  <text class="card-text" x="604" y="531" font-size="34" font-weight="600">SYSTEM 2</text>
+  <text class="card-text" x="604" y="602" font-size="31" font-weight="300">
+    <tspan x="604" dy="0">Infrequent Vision-</tspan>
+    <tspan x="604" dy="39">Language Semantic</tspan>
+    <tspan x="604" dy="39">Reasoning</tspan>
+  </text>
+  <text class="muted-card" x="604" y="798" font-size="27">7B Pretrained VLM</text>
+  <text class="muted-card" x="928" y="798" font-size="19">GPU 2</text>
+
+  <!-- Latent vector -->
+  <rect x="1136" y="552" width="208" height="62" rx="18" fill="rgba(130,128,220,.38)" stroke="rgba(220,218,255,.7)" stroke-width="3"></rect>
+  <text class="muted-card" x="1167" y="592" font-size="28">Latent Vector</text>
+
+  <!-- System 1 card -->
+  <rect x="1474" y="477" width="506" height="348" rx="20" fill="rgba(113,112,255,.92)" stroke="rgba(190,188,255,.66)" stroke-width="2"></rect>
+  <g transform="translate(1735 478)" fill="none" stroke="white" stroke-width="2" opacity=".20">
+    <circle cx="118" cy="54" r="28"></circle>
+    <rect x="82" y="86" width="78" height="96" rx="28"></rect>
+    <circle cx="78" cy="112" r="20"></circle>
+    <circle cx="164" cy="112" r="20"></circle>
+    <path d="M62 128 C48 166 45 198 38 246"></path>
+    <path d="M180 128 C190 168 190 202 188 248"></path>
+    <path d="M91 184 C88 235 72 284 68 332"></path>
+    <path d="M143 184 C145 238 164 286 166 332"></path>
+    <circle cx="68" cy="334" r="18"></circle>
+    <circle cx="166" cy="334" r="18"></circle>
+  </g>
+  <text class="card-text" x="1510" y="531" font-size="34" font-weight="600">SYSTEM 1</text>
+  <text class="card-text" x="1505" y="600" font-size="31" font-weight="300">Fast, Reactive Control</text>
+  <text class="muted-card" x="1505" y="798" font-size="27">80M Transformer</text>
+  <text class="muted-card" x="1904" y="798" font-size="19">GPU 1</text>
+
+  <!-- Foreground connector lines for exact visual contact with System 1. -->
+  <path class="wire" d="M1344 583 H1476"></path>
+  <path class="wire" d="M1978 583 H2160"></path>
+  <circle class="dot" r="4.5">
+    <animateMotion dur="1.55s" repeatCount="indefinite" path="M1344 583 H1476"></animateMotion>
+  </circle>
+  <circle class="dot" r="4.5">
+    <animateMotion dur="1.15s" repeatCount="indefinite" path="M1978 583 H2160"></animateMotion>
+  </circle>
+
+  <!-- Right video -->
+  <clipPath id="rightVidClip"><rect x="2160" y="370" width="540" height="442" rx="17"></rect></clipPath>
+  <rect x="2160" y="370" width="540" height="442" rx="17" fill="#202020" stroke="rgba(255,255,255,.13)" stroke-width="2"></rect>
+  <g clip-path="url(#rightVidClip)">
+    <rect class="camera-bg" x="2130" y="345" width="610" height="490" fill="url(#videoGrad)"></rect>
+    <rect x="2160" y="370" width="540" height="442" fill="url(#scan)" opacity=".58"></rect>
+    <g fill="none" stroke="rgba(255,255,255,.58)" stroke-width="16" stroke-linecap="round">
+      <path d="M2260 705 L2290 560 L2330 705"></path>
+      <path d="M2500 705 L2530 560 L2570 705"></path>
+      <path d="M2238 565 H2354 M2478 565 H2594"></path>
+      <path d="M2292 610 L2244 655 M2532 610 L2585 656"></path>
+    </g>
+    <circle cx="2290" cy="515" r="34" fill="rgba(255,255,255,.45)"></circle>
+    <circle cx="2530" cy="515" r="34" fill="rgba(255,255,255,.45)"></circle>
+  </g>
+  <text class="white" x="2244" y="878" font-size="32" opacity=".86">Whole Upper Body Control</text>
+</svg>
+</body>
+</html>
