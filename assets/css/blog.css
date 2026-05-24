@@ -2446,7 +2446,6 @@ nav ul li a:focus {
 
 .media-carousel {
     position: relative;
-    overflow: hidden;
     width: 100%;
     border-radius: 20px;
 }
@@ -2458,18 +2457,26 @@ nav ul li a:focus {
 }
 
 .media-carousel-track {
-    display: flex;
-    width: 200%;
-    transition: transform .55s cubic-bezier(.2, .8, .2, 1);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
 }
 
 .media-carousel-slide {
-    flex: 0 0 50%;
+    position: absolute;
+    inset: 0;
     min-width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .32s ease, visibility .32s ease;
 }
 
-#xlab-media-system:checked ~ .media-carousel-track {
-    transform: translateX(-50%);
+#xlab-media-video:checked ~ .media-carousel-track .media-carousel-slide:first-child,
+#xlab-media-system:checked ~ .media-carousel-track .media-carousel-slide:last-child {
+    opacity: 1;
+    visibility: visible;
 }
 
 .media-carousel .video-card,
@@ -2477,6 +2484,10 @@ nav ul li a:focus {
     border: 1px solid rgba(20, 30, 34, .12);
     border-radius: 20px;
     box-shadow: 0 20px 54px rgba(32, 44, 48, .14);
+}
+
+.media-carousel .video-card {
+    height: 100%;
 }
 
 .system-flow-card {
