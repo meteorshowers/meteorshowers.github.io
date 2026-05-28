@@ -2063,6 +2063,41 @@ nav ul li a:focus {
     font-weight: 700;
 }
 
+.contact-grid a .contact-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.contact-icon-xhs {
+    position: relative;
+    background: linear-gradient(180deg, #ff3355, #c8002b);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .15);
+}
+
+.contact-icon-xhs::before,
+.contact-icon-xhs::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: "";
+    background: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.contact-icon-xhs::before {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.contact-icon-xhs::after {
+    width: 16px;
+    height: 3px;
+    border-radius: 999px;
+    box-shadow: 0 -6px 0 #fff, 0 6px 0 #fff;
+}
+
 .contact-grid span {
     color: rgba(255, 255, 255, .52);
     font-size: 12px;
