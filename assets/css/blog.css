@@ -1396,6 +1396,29 @@ nav ul li a:focus {
     background: #f3f6f9;
 }
 
+.language-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 46px;
+    min-height: 28px;
+    padding: 4px 10px;
+    border: 1px solid rgba(20, 30, 34, .14);
+    border-radius: 999px;
+    color: #333;
+    background: #fff;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.language-toggle:hover,
+.language-toggle:focus {
+    color: #1b66b1;
+    background: #f3f6f9;
+    outline: none;
+}
+
 .blogmain {
     margin-top: 28px;
     font-size: 15px;
@@ -2125,6 +2148,18 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
+    color: #111820;
+    background: rgba(20, 30, 34, .07);
+}
+
+.language-toggle {
+    color: #303a40;
+    background: rgba(255, 255, 255, .62);
+    border-color: rgba(20, 30, 34, .12);
+}
+
+.language-toggle:hover,
+.language-toggle:focus {
     color: #111820;
     background: rgba(20, 30, 34, .07);
 }

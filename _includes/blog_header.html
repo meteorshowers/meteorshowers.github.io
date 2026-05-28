@@ -5,15 +5,19 @@
         </a>
         <div class="blogtitle">
             <h1><a href="/">{{ site.data.blog.title }}</a></h1>
-            <h5> {{ site.data.blog.description }} </h5>
+            <h5 data-i18n="site.description"> {{ site.data.blog.description }} </h5>
         </div>
     </div>
 
     <nav class="menu" role="nav">
         <ul>
-            <li><a href="/index.html"> Home</a></li>
+            <li><a href="/index.html" data-i18n="nav.home"> Home</a></li>
             <li>|</li>
-            <li><a href="/contact.html"> Contact</a></li>
+            <li><a href="/contact.html" data-i18n="nav.contact"> Contact</a></li>
+            <li>|</li>
+            <li>
+                <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">中文</button>
+            </li>
         </ul>
     </nav>
 </header>
