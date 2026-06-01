@@ -35,20 +35,20 @@ layout: blog_layout
       XLab embodied intelligence media reference.
     </p>
   </div>
-  <div class="media-carousel xlab-carousel" aria-label="XLab embodied intelligence media gallery">
+  <div class="media-carousel xlab-carousel protected-media" aria-label="XLab embodied intelligence media gallery" data-password="Singularity">
     <input class="media-carousel-radio" type="radio" name="xlab-media" id="xlab-media-video" checked>
     <input class="media-carousel-radio" type="radio" name="xlab-media" id="xlab-media-system">
     <div class="media-carousel-track">
       <div class="media-carousel-slide">
         <div class="video-card">
           <video controls autoplay muted loop playsinline preload="metadata">
-            <source src="/assets/videos/xlab-embodied-intelligence.mp4" type="video/mp4">
+            <source data-src="/assets/videos/xlab-embodied-intelligence.mp4" type="video/mp4">
           </video>
         </div>
       </div>
       <div class="media-carousel-slide">
         <div class="system-flow-card">
-          <iframe src="/assets/embeds/helix_style_flow_recreation.html" title="Embodied VLA system architecture animation" loading="lazy"></iframe>
+          <iframe data-src="/assets/embeds/helix_style_flow_recreation.html" title="Embodied VLA system architecture animation" loading="lazy"></iframe>
         </div>
       </div>
     </div>
@@ -56,6 +56,16 @@ layout: blog_layout
       <label for="xlab-media-video" data-i18n="xlab.tabVideo">Demo video</label>
       <label for="xlab-media-system" data-i18n="xlab.tabSystem">System view</label>
     </div>
+    <form class="media-lock" aria-label="Protected media password">
+      <div class="media-lock-panel">
+        <label for="xlab-media-password">Password</label>
+        <div class="media-lock-row">
+          <input id="xlab-media-password" name="password" type="password" autocomplete="current-password" inputmode="text">
+          <button type="submit">Unlock</button>
+        </div>
+        <p class="media-lock-error" aria-live="polite"></p>
+      </div>
+    </form>
   </div>
 </section>
 
@@ -77,6 +87,55 @@ layout: blog_layout
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var container = document.querySelector('.protected-media');
+    if (!container) return;
+
+    var form = container.querySelector('.media-lock');
+    var input = container.querySelector('input[name="password"]');
+    var error = container.querySelector('.media-lock-error');
+    var password = container.getAttribute('data-password');
+    var storageKey = 'xlab-media-unlocked';
+
+    function loadProtectedMedia() {
+      container.querySelectorAll('source[data-src]').forEach(function (source) {
+        source.setAttribute('src', source.getAttribute('data-src'));
+        source.removeAttribute('data-src');
+        if (source.parentElement && source.parentElement.load) {
+          source.parentElement.load();
+          source.parentElement.play && source.parentElement.play().catch(function () {});
+        }
+      });
+
+      container.querySelectorAll('iframe[data-src]').forEach(function (iframe) {
+        iframe.setAttribute('src', iframe.getAttribute('data-src'));
+        iframe.removeAttribute('data-src');
+      });
+
+      container.classList.add('is-unlocked');
+      if (form) form.setAttribute('hidden', 'hidden');
+    }
+
+    if (window.sessionStorage && sessionStorage.getItem(storageKey) === 'true') {
+      loadProtectedMedia();
+      return;
+    }
+
+    if (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (input && input.value === password) {
+          if (window.sessionStorage) sessionStorage.setItem(storageKey, 'true');
+          loadProtectedMedia();
+        } else if (error) {
+          error.textContent = 'Incorrect password';
+        }
+      });
+    }
+  }());
+</script>
 
 <section class="figure-section light">
   <div class="experience-copy">
