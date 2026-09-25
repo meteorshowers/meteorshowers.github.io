@@ -3,6 +3,7 @@
     zh: {
       "site.description": "VLA · 世界模型 · 机器人系统",
       "nav.home": "首页",
+      "nav.news": "动态",
       "nav.contact": "联系",
       "hero.kicker": "VLA · 世界模型 · 机器人系统",
       "hero.title": "做能落到真实机器人上的智能系统。",
@@ -26,6 +27,9 @@
       "mission.kicker": "使命",
       "mission.title": "构建通用、可靠、可持续迭代的机器人智能。",
       "mission.body": "我希望做出能在真实世界规模化部署的机器人系统，并通过闭环数据、世界模型和持续迭代，让机器人能力不断提升。",
+      "news.kicker": "动态 / 进展",
+      "news.title": "团队正在构建什么。",
+      "news.intro": "记录我与具身模型部共同推进并可公开分享的阶段性成果。",
       "visitors.kicker": "访问",
       "visitors.title": "全球访问",
       "visitors.views": "总浏览量",
@@ -45,6 +49,16 @@
       var key = node.getAttribute("data-i18n");
       node.textContent = useZh && translations.zh[key]
         ? translations.zh[key]
+        : node.dataset.i18nOriginal;
+    });
+
+    document.querySelectorAll("[data-i18n-zh]").forEach(function (node) {
+      if (!node.dataset.i18nOriginal) {
+        node.dataset.i18nOriginal = node.textContent.trim();
+      }
+
+      node.textContent = useZh
+        ? node.getAttribute("data-i18n-zh")
         : node.dataset.i18nOriginal;
     });
 
