@@ -12,7 +12,7 @@
       "hero.contact": "联系",
       "xlab.title": "构建具身 Agent、VLA 与世界模型系统。",
       "xlab.subtitle": "01 · EngineAI Robotics",
-      "xlab.body": "在 EngineAI Robotics，我负责数据闭环系统，包括数据采集装置、数据运营、数据自动化标注与清洗，同时推进 Agent 推理与任务编排、VLA 策略和世界建模。这套完整体系将机器人经验持续转化为训练数据和模型能力，使机器人能够理解目标、预测物理结果，并在真实环境中完成任务。",
+      "xlab.body": "在 EngineAI Robotics，我负责数据闭环系统（包括数据采集装置、数据运营、数据自动化标注与清洗），同时推进 Agent 推理与任务编排、VLA 策略和世界建模。这套完整体系将机器人经验持续转化为训练数据和模型能力，使机器人能够理解目标、预测物理结果，并在真实环境中完成任务。",
       "xlab.note": "EngineAI Robotics 相关展示。",
       "xlab.tabVideo": "演示视频",
       "xlab.tabSystem": "系统视图",
