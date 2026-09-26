@@ -2220,6 +2220,21 @@ nav ul li a:focus {
     line-height: 1.5;
 }
 
+.figure-copy .hero-role {
+    margin: 24px 0 4px;
+    color: #182025;
+    font-size: clamp(17px, 1.55vw, 20px);
+    font-weight: 750;
+    line-height: 1.35;
+}
+
+.figure-copy .hero-focus {
+    margin: 0;
+    color: #59656b;
+    font-size: clamp(15px, 1.4vw, 18px);
+    line-height: 1.5;
+}
+
 .figure-kicker {
     color: #6e777d !important;
     font-size: 12px !important;
