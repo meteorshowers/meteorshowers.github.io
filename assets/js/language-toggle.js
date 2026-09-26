@@ -1,7 +1,7 @@
 (function () {
   var translations = {
     zh: {
-      "site.description": "Agent · VLA · 世界模型",
+      "site.description": "闭环 Physical AI · 数据 · 仿真 · 模型 · 部署",
       "nav.home": "首页",
       "nav.news": "动态",
       "nav.contact": "联系",
