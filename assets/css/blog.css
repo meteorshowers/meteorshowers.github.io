@@ -2592,15 +2592,10 @@ nav ul li a:focus {
     visibility: visible;
 }
 
-.media-carousel .video-card,
 .system-flow-card {
     border: 1px solid rgba(20, 30, 34, .12);
     border-radius: 20px;
     box-shadow: 0 20px 54px rgba(32, 44, 48, .14);
-}
-
-.media-carousel .video-card {
-    height: 100%;
 }
 
 .system-flow-card {
