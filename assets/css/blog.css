@@ -2355,59 +2355,13 @@ nav ul li a:focus {
 }
 
 .logo-engineai {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex: 0 0 auto;
-}
-
-.engineai-symbol,
-.engineai-wordmark {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    flex: 0 0 auto;
-}
-
-.engineai-symbol {
-    width: 26px;
-    height: 26px;
-}
-
-.engineai-symbol img {
-    display: block;
-    width: auto;
-    height: 26px;
-    max-width: none;
-}
-
-.engineai-wordmark {
-    width: 88px;
-    height: 15px;
-}
-
-.engineai-wordmark img {
-    position: absolute;
-    top: -21px;
-    left: -44px;
-    display: block;
-    width: 134px;
-    height: auto;
-    max-width: none;
+    width: 106px;
+    height: 24px;
 }
 
 .logo-xpeng {
     width: 34px;
     height: 18px;
-    overflow: hidden;
-    flex: 0 0 auto;
-}
-
-.logo-xpeng img {
-    display: block;
-    width: auto;
-    height: 18px;
-    max-width: none;
 }
 
 .logo-dji {
