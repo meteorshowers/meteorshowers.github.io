@@ -2333,10 +2333,11 @@ nav ul li a:focus {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     min-width: 58px;
-    height: 32px;
+    min-height: 38px;
     margin-bottom: 14px;
-    padding: 0 10px;
+    padding: 4px 10px 4px 5px;
     border: 1px solid rgba(20, 30, 34, .12);
     border-radius: 8px;
     color: #182025;
@@ -2345,6 +2346,79 @@ nav ul li a:focus {
     font-weight: 800;
     letter-spacing: .04em;
     box-shadow: 0 8px 22px rgba(32, 44, 48, .06);
+}
+
+.org-logo-image {
+    display: block;
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
+.logo-engineai {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 0 0 auto;
+}
+
+.engineai-symbol,
+.engineai-wordmark {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.engineai-symbol {
+    width: 26px;
+    height: 26px;
+}
+
+.engineai-symbol img {
+    display: block;
+    width: auto;
+    height: 26px;
+    max-width: none;
+}
+
+.engineai-wordmark {
+    width: 88px;
+    height: 15px;
+}
+
+.engineai-wordmark img {
+    position: absolute;
+    top: -21px;
+    left: -44px;
+    display: block;
+    width: 134px;
+    height: auto;
+    max-width: none;
+}
+
+.logo-xpeng {
+    width: 34px;
+    height: 18px;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.logo-xpeng img {
+    display: block;
+    width: auto;
+    height: 18px;
+    max-width: none;
+}
+
+.logo-dji {
+    width: 30px;
+    height: 24px;
+}
+
+.logo-nankai {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
 }
 
 .experience-time {
