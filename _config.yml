@@ -1,9 +1,9 @@
 # Site settings
 title: 李炫毅 / Xuanyi Li
-description: Closed-Loop Physical AI · Data · Simulation · Models · Deployment
+description: 李炫毅（Xuanyi Li），现任众擎机器人（EngineAI Robotics）具身模型负责人，负责数据闭环系统，并推进具身 Agent、VLA 与世界模型研发。此前任职于小鹏汽车、大疆车载。
 favicon: /assets/img/myphoto.jpg
 baseurl:
-url: https://meteorshowers.github.io/
+url: https://meteorshowers.github.io
 rss_url:
 
 # Build settings
